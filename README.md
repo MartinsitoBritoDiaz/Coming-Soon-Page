@@ -13,6 +13,8 @@ Thanks for checking out this front-end coding challenge.
 
 ## Links
 
+    https://coming-soon-ping-mbd.netlify.app/
+
 ## Author
 
     Martinsito Brito Diaz
