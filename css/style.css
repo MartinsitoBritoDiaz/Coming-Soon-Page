@@ -95,40 +95,47 @@ img{ max-width: 100%;}
     margin-bottom: 1rem;
 }
 
+#form small{
+    color: red;
+    font-style: italic;
+    display: inline-block;
+    grid-row: 2/3;
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     #form{
-        text-align: left;  
-        color: red;
         margin: 4rem 0;
         margin-bottom: 8rem;
     }
-
-    #form .card__input{
-        border-color: red;
+    #form small{
+        
+        text-align: left;
     }
 }
 
 .card__form{
-    display: flex;
+    display: grid;
     text-align: left;
-    flex-direction: column;
 }
 @media (min-width: 768px) {
     .card__form{
-        flex-direction: row;
+        grid-template-columns: repeat(2, 1fr);
         
+    row-gap: 2rem;
     }
 }
 
 .card__input{
     padding: 1.5rem 3rem;
     border-radius: 3rem;
+    
     margin-bottom: 1rem;
     border: 1px solid var(--Pale-Blue);
 }
 @media (min-width: 768px) {
      .card__input{
-         margin-bottom: 0rem;
+        margin-bottom: 0rem;
         padding-right: 20rem;
      }
 }
@@ -145,6 +152,7 @@ img{ max-width: 100%;}
     color: white;
     border: none;
     padding: 1.5rem;
+    margin-top: 1rem;
     background-color: var(--Blue);
     border-radius: 3rem;
     -webkit-box-shadow: 0px 7px 35px -10px rgba(79,125,243,1);
@@ -159,12 +167,20 @@ a{
 @media (min-width: 768px) {
      .card__button{
          margin-left: 2rem;
+         margin-top: 0rem;
          padding: 1.5rem 5rem;
      }
 }
 
 .card__button:hover{
     cursor: pointer;
+    opacity: .8;
+}
+
+@media (min-width: 768px) {
+    .card__img{
+        margin-top: -5rem;
+    }
 }
 
 .card__info{
