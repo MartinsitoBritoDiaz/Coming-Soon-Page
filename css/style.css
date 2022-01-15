@@ -90,16 +90,28 @@ img{ max-width: 100%;}
         font-size: 1.5rem;
     }
 }
+
+#form{
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+     #form{
+        
+        margin: 4rem 0;
+        margin-bottom: 8rem;
+     }
+}
+
 .card__form{
     display: flex;
+    text-align: left;
     flex-direction: column;
 }
 @media (min-width: 768px) {
     .card__form{
         flex-direction: row;
         
-        margin: 4rem 0;
-        margin-bottom: 8rem;
     }
 }
 
@@ -111,6 +123,7 @@ img{ max-width: 100%;}
 }
 @media (min-width: 768px) {
      .card__input{
+         margin-bottom: 0rem;
         padding-right: 20rem;
      }
 }
