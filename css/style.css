@@ -4,6 +4,8 @@
     --Pale-Blue: hsl(223, 100%, 88%);
     --Light-Red: hsl(354, 100%, 66%);
     --Gray: hsl(0, 0%, 59%);
+    
+    --Gray-light: hsl(0, 0%, 89%);
     --Very-Dark-Blue: hsl(209, 33%, 12%);
 
     --font-principal: 'Libre Franklin', sans-serif;
@@ -25,7 +27,7 @@ body{
     font-family: var(--font-principal);
 }
 
-h2{ font-size: 2.5rem; }
+h2{ font-size: 2.3rem; }
 
 p{ font-size: 2rem; }
 
@@ -37,15 +39,16 @@ img{ max-width: 100%;}
     text-align: center;
     align-items: center;
     justify-content:space-evenly;
-    width: min(90%, 60rem);
+    width: min(95%, 60rem);
     padding: 0 2rem;
 }
 
-.card svg{
-    
+.card__header__img{
+    width: 15%;
 }
 
 .card__title{
+    margin-top: -5rem;
     font-weight: 300;
     color: var(--Gray);
 }
@@ -62,32 +65,61 @@ img{ max-width: 100%;}
 
 .card__form{
     display: flex;
+    margin: 0 -2rem;
     flex-direction: column;
 }
 
 .card__input{
     margin-top: 2rem;
-    padding: 1rem 3rem;
-    border-radius: 2rem;
-    margin-bottom: 2rem;
+    padding: 1.5rem 3rem;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
     border: 1px solid var(--Pale-Blue);
 }
 
 .card__input::placeholder{
     color: var(--Gray);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
 .card__button{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: white;
     border: none;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: var(--Blue);
-    border-radius: 2rem;
+    border-radius: 3rem;
     -webkit-box-shadow: 0px 7px 35px -10px rgba(79,125,243,1);
     -moz-box-shadow: 0px 7px 35px -10px rgba(79,125,243,1);
     box-shadow: 0px 7px 35px -10px rgba(79,125,243,1);
+}
 
+.card__button:hover{
+    cursor: pointer;
+}
+
+.card__info{
+    margin-bottom: -3rem;
+}
+
+.footer__paragraph{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--Gray);
+}
+
+/* Fab styles */
+.fab{
+    color: var(--Blue);
+    border: 1px solid var(--Gray-light);
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+
+.card__icon{
+    margin-bottom: 3rem;
+}
